@@ -1,0 +1,131 @@
+/*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.vertical-nav {
+    min-width: 20rem;
+    width: 20rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+
+.page-content {
+    width: calc(100% - 20rem);
+    margin-left: 20rem;
+    transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+    margin-left: -17rem;
+}
+
+#content.active {
+    width: 100%;
+    margin: 0;
+}
+
+.bg_musicVideo {
+
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -17rem;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #content {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content.active {
+        margin-left: 17rem;
+        width: calc(100% - 17rem);
+    }
+}
+
+.gallery_adjust {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+
+}
+
+.gallery_adjust p {
+    text-align: center;
+    padding: 4px;
+    font-family: monospace;
+    background: #222;
+    color: #efefef;
+}
+.gallery_img{
+    transform: rotate(0);
+    transition: all ease 0.4s;
+}
+.gallery_img:hover{
+    transition: all ease 0.4s;
+}
+
+.color_title{
+    color: rgb(207, 167, 140);
+}
+h2 {
+    font-family: var(--secondary-font-family);
+    font-weight: 600;
+    font-size: 25px;
+}
+h4 {
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    font-size: 20px;
+}
+p{
+    font-family: var(--secondary-font-family);
+    font-size: 20px;
+}
+.vertical-nav h4{ 
+    font-size: 4.07em;
+    font-family: Poppins;
+    line-height: 1.05em;
+    font-weight: 400;
+}
+.nav-item{
+    font-size: 2em;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    opacity: 0.5 !Important;
+  }
+  .nav-item{
+    opacity: 1;
+  }
+  .vertical-nav h4:hover{
+    cursor: pointer;
+  }
+  .bg_musicVideo:hover img{
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: all 0.4s;
+  cursor: pointer;
+  }
+  .bg_musicVideo img{
+    transition: all 0.4s;
+  }
+  .c_pointer{
+    cursor: pointer;
+  }
