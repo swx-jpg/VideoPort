@@ -15,16 +15,16 @@ const about = [
 ];
 const workCat = [
   {
-    title: "Music Videos", img: "./img/Site/MusicVideo/ricko_Lowkey/Thumbnail-min.jpg", width: "w-1/2"
+    title: "Music Videos", img: "/img/Site/musicVideo/ricko_Lowkey/Thumbnail-min.jpg", width: "w-1/2"
   },
   {
-    title: "Concert Coverage", img: "./img/Site/concertCoverage/syro/Syro_Thumbail_.jpg", width: "w-full"
+    title: "Concert Coverage", img: "/img/Site/concertCoverage/syro/Syro_Thumbail_.jpg", width: "w-full"
   },
   {
-    title: "Commercials", img: "./img/Site/commercials/commercial.jpg", width: "w-full"
+    title: "Commercials", img: "/img/Site/commercials/commercial.jpg", width: "w-full"
   },
   {
-    title: "Stories", img: "./img/Site/stories/stories.jpg", width: "w-full"
+    title: "Stories", img: "/img/Site/stories/stories.jpg", width: "w-full"
   }
 
 
