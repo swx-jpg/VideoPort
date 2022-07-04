@@ -1,3 +1,1 @@
-module.exports = {
-    webpack5: false,
-  }
+future: { webpack5: true }
