@@ -53,7 +53,7 @@ export default function Commercials() {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -97,7 +97,7 @@ export default function Index() {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

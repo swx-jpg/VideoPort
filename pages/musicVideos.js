@@ -98,7 +98,7 @@ export default function MusicVideo() {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

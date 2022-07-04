@@ -50,7 +50,7 @@ export default function Stories() {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

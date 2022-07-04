@@ -151,7 +151,7 @@ export default function ConcertCoverage() {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
