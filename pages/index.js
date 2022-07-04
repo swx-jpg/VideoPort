@@ -38,7 +38,7 @@ export default function Index() {
       <VerticalNavbar fixed />
       <section className="header page-content relative flex h-screen pt-8  px-8">
         
-        <div className="container mx-auto  flex flex-wrap  pb-20">
+        <div className=" mx-auto  flex flex-wrap  pb-20">
           <div className="w-full contents px-4 h-fit">
 
             <div className="w-1/2 text-center py-16 px-16 h-fit">

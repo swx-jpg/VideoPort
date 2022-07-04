@@ -79,20 +79,49 @@ const imagesArray = [
 
 export default function concertCoverage() {
   useEffect(() => {
+    let imagensAEsquerda =[];
     if (document.querySelectorAll(".imgs_gallery img")!= undefined) {
+      // for (let a = 0; a < document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img"); a++) {
+      //   if (document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img")[a] == e.target) {
+      //     found = true;
+      //     console.log(document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img").length);
+
+      //     break;
+      //   }
+      // }
       document.querySelector(".imgs_gallery").onmouseover = function (e) {
         for ( let i = 0; i < document.querySelectorAll(".imgs_gallery img").length; i++ ){
           document.querySelectorAll(".imgs_gallery img")[i].onmouseover = function (e) {
             //Math.floor(Math.random() * (max - min + 1) + min)
+
+           
+            // console.log(e.target)
+            // console.log(document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img").contains(e.target))
+            // if (document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img").includes(e.target)){
+            //   e.target.style.transform = 'rotate('+Math.floor(Math.random() * (1 + 1 + 1) - 1)+'deg) scale(1.5)';
+            //   e.target.style.zIndex = '10';
+            //   e.target.style.marginLeft = '-3em';
+            // }
             e.target.style.transform = 'rotate('+Math.floor(Math.random() * (1 + 1 + 1) - 1)+'deg) scale(1.5)';
             e.target.style.zIndex = '10';
 
           }
           document.querySelectorAll(".imgs_gallery img")[i].onmouseout  = function (e) {
+            
+            // if (document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img").includes(e.target)){
+             
+            //   e.target.style.zIndex = '1';            
+            //   e.target.style.marginLeft = '0em';
+            //   e.target.style.marginLeft = '0em';
+            // }
+
             e.target.style.transform = 'rotate(0) scale(1)';
-            e.target.style.zIndex = '1';
+            e.target.style.zIndex = '1';            
+            e.target.style.marginLeft = '0em';
+
           }
         }
+        
       }
     }
 
@@ -106,18 +135,18 @@ export default function concertCoverage() {
 
       <VerticalNavbar fixed />
       <section className="header page-content relative items-center flex pt-8 ">
-        <div className="container mx-auto items-center flex flex-wrap h-fill ">
+        <div className=" mx-auto items-center flex flex-wrap h-fill ">
           <div className="w-full contents px-8 ">
             <div className="w-1/2 mx-auto px-6 pb-6">
               <img className="w-1/2 mx-auto" src={imagesArray[0].img} />
             </div>
             <div className="w-1/2 mx-auto px-6 pb-6">
-              <h2 className="bold text-4xl text-center pb-6">Syro Shows</h2>
+              <h2 className="strong text-4xl text-center pb-6">Syro Shows</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor interdum urna, vel commodo turpis condimentum at. Sed mollis bibendum tortor, at molestie magna efficitur sagittis. Proin eu nulla urna. Cras commodo dui vitae nisi imperdiet euismod. Integer quis arcu suscipit, facilisis leo eu, euismod massa. Vestibulum at nibh pharetra, mattis diam non, hendrerit arcu. Curabitur molestie ut lectus semper aliquet. Nulla blandit, elit non sodales lobortis, mauris ligula egestas lectus, at lobortis nisi arcu id ipsum. Proin quis lorem sit amet dui sagittis feugiat. Praesent sodales diam sed iaculis vehicula. Nulla egestas tincidunt risus non malesuada. Aliquam placerat mollis ligula nec condimentum. Pellentesque eu massa tincidunt, facilisis erat ac, gravida orci. Cras interdum congue scelerisque. Praesent ipsum nibh, sagittis vel ex id, ornare tempor mi.</p>
             </div>
           </div>
           <div className="w-full contents  ">
-            <div className="w-full bg-black px-8 pt-8 pb-32 -mb-24 imgs_gallery ">
+            <div className="w-full bg-black px-16 pt-8 pb-32 -mb-24 imgs_gallery ">
               <ResponsiveMasonry
                 columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
               >

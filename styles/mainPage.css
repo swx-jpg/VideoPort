@@ -129,3 +129,11 @@ p{
   .c_pointer{
     cursor: pointer;
   }
+
+  .contentMinH{
+    min-height: 90vh;
+  }
+  .strong_g{
+    text-weight: bolder;
+  }
+
