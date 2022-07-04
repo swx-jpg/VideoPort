@@ -42,7 +42,7 @@ const lowkeyContentArray = [
 ]
 
 
-export default function concertCoverage() {
+export default function MusicVideo() {
   
   return (
     <>
@@ -50,13 +50,15 @@ export default function concertCoverage() {
       <VerticalNavbar fixed />
       <section className="header page-content relative items-center flex pt-8 ">
         <div className=" mx-auto items-center flex flex-wrap h-fill ">
+        <h1 className="w-full text-6xl pb-20 font-bold text-center bege ">Music Videos</h1>
+
           <div className="w-full contents px-8 ">
-            <div className="w-1/2 mx-auto px-6 pb-6">
+            <div className="w-1/2 mx-auto px-6 pb-6 py-6">
               <img className="w-1/2 mx-auto" src={lowkeyContentArray[0].img}  alt={lowkeyContentArray[0].alt}/>
             </div>
             <div className="w-1/2 mx-auto px-6 pb-6">
-              <h2 className="strong text-4xl text-center pb-6">Ricko Sicko - LOWKEY</h2>
-              <p>Music video for the underground artist Ricko Sicko. It was challenging to be on the production, as a director and as script writer, since it was a new position for me. You can see the outcome below :)</p>
+              <h2 className="strong text-4xl text-center pb-6 bege">Ricko Sicko - LOWKEY</h2>
+              <p>Music video for the underground artist Ricko Sicko. It was challenging to be on the production, as a director and as the script writter, since it was a new position for me. You can see the outcome below :)</p>
               <p>Also made the thumbnail, instagram ad, instagram teaser, Spotify canva and artwork.</p>
             </div>
           </div>
@@ -66,24 +68,24 @@ export default function concertCoverage() {
             <div className="w-full bg-black px-8 pt-8 pb-32 -mb-24 imgs_gallery ">
               <Link href="https://www.youtube.com/watch?v=FKZThNEChyo">
                 <a className="w-8/12 mx-auto" target="_blank">
-                  <img className="w-8/12 mx-auto" src={lowkeyContentArray[1].img} alt={lowkeyContentArray[1].alt} />
+                  <img className="w-8/12 mx-auto py-4" src={lowkeyContentArray[1].img} alt={lowkeyContentArray[1].alt} />
                 </a>
               </Link>
               <h4 className="text-center text-white">Ricko Sicko - LOWKEY</h4>
               <div className="w-1/3  mx-auto py-6">
-                <Player>
+                <Player className="py-4">
                   <source src={lowkeyContentArray[2].videoUrl} />
                 </Player>
                 <h4 className="text-center text-white">{lowkeyContentArray[2].text}</h4>
               </div>
               <div className="w-1/3  mx-auto py-6">
-                <Player>
+                <Player className="py-4">
                   <source src={lowkeyContentArray[3].videoUrl} />
                 </Player>
                 <h4 className="text-center text-white">{lowkeyContentArray[3].text}</h4>
               </div>
               <div className="w-1/3  mx-auto py-6">
-                <Player>
+                <Player className="py-4">
                   <source src={lowkeyContentArray[4].videoUrl} />
                 </Player>
                 <h4 className="text-center text-white">{lowkeyContentArray[3].text}</h4>

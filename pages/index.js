@@ -17,18 +17,16 @@ const workCat = [
   {
     title: "Music Videos", img: "./img/Site/MusicVideo/ricko_Lowkey/Thumbnail-min.jpg", width: "w-1/2"
   },
-  // {
-  //   title: "Other1 Videos", img: "./img/Site/MusicVideo/ricko_Lowkey/Thumbnail-min.jpg", width: "w-1/2"
-  // },
   {
     title: "Concert Coverage", img: "./img/Site/concertCoverage/syro/Syro_Thumbail_.jpg", width: "w-full"
+  },
+  {
+    title: "Commercials", img: "./img/Site/commercials/commercial.jpg", width: "w-full"
+  },
+  {
+    title: "Stories", img: "./img/Site/stories/stories.jpg", width: "w-full"
   }
-  // ,{
-  //   title: "Other2 Videos", img: "./img/Site/MusicVideo/ricko_Lowkey/Thumbnail-min.jpg", width: "w-1/2"
-  // },
-  // {
-  //   title: "Other3 Videos", img: "./img/Site/MusicVideo/ricko_Lowkey/Thumbnail-min.jpg", width: "w-1/2"
-  // }
+
 
 ];
 
@@ -39,6 +37,7 @@ export default function Index() {
       <section className="header page-content relative flex h-screen pt-8  px-8">
         
         <div className=" mx-auto  flex flex-wrap  pb-20">
+
           <div className="w-full contents px-4 h-fit">
 
             <div className="w-1/2 text-center py-16 px-16 h-fit">
@@ -49,17 +48,31 @@ export default function Index() {
             </div>
             
             <Link href="/musicVideos"> 
-            <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
-                <img src={workCat[0].img} />
-                <h2 className="">{workCat[0].title}</h2>
-            </div>
+              <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
+                  <img src={workCat[0].img} />
+                  <h2 className="">{workCat[0].title}</h2>
+              </div>
             </Link>
 
             <Link href="/concertCoverage"> 
-            <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
-              <img src={workCat[1].img} />
-              <h2 className="">{workCat[1].title}</h2>
-            </div>
+              <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
+                <img src={workCat[1].img} />
+                <h2 className="">{workCat[1].title}</h2>
+              </div>
+            </Link>
+            
+            <Link href="/commercials"> 
+              <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
+                  <img src={workCat[2].img} />
+                  <h2 className="">{workCat[2].title}</h2>
+              </div>
+            </Link>
+
+            <Link href="/stories"> 
+              <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
+                <img src={workCat[3].img} />
+                <h2 className="">{workCat[3].title}</h2>
+              </div>
             </Link>
 
             {/* <div className="w-full text-center bg_musicVideo pb-2 px-2">

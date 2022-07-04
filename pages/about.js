@@ -10,40 +10,23 @@ import Link from "next/link";
 import Footer from "components/Footers/Footer.js";
 import VerticalNavbar from "components/Navbars/VerticalNavbar.js";
 
-
-const masonryOptions = {
-  transitionDuration: 0
-};
-
-const imagesLoadedOptions = { background: '.my-bg-image-el' }
-
-
-
-const lowkeyContentArray = [
+const aboutArray = [
   {
-    img: "./img/Site/musicVideo/ricko_Lowkey/Artwork-lowkey-min.jpg", alt: "galeria lowkey artwork"
+    img: "./img/Site/about/profile_pic.jpg", alt: "Profile Picture"
   }
 ]
 
 const logosAbout =[
   {
-    url:"./img/Site/logos_about/Logos_1.png", alt: "Logo Adidas"
+    url:"./img/Site/commercials/logo-reakiro.png", alt: "Logo Reakiro"
   }
   ,{
-    url:"./img/Site/logos_about/Logos_2.png", alt: "Logo NationalGeo"
+    url:"./img/Site/logos_about/logo_mln.png", alt: "Logo Mln Studio"
   }
   ,{
-    url:"./img/Site/logos_about/Logos_3.png", alt: "Logo São Silvestre"
-  },
-  {
-    url:"./img/Site/logos_about/Logos_1.png", alt: "Logo Adidas"
+    url:"./img/Site/logos_about/logo_dorsya.jpeg", alt: "Logo Dorsya"
   }
-  ,{
-    url:"./img/Site/logos_about/Logos_2.png", alt: "Logo NationalGeo"
-  }
-  ,{
-    url:"./img/Site/logos_about/Logos_3.png", alt: "Logo São Silvestre"
-  }
+  
 ]
 
 const tableContent = [
@@ -97,7 +80,7 @@ const tableContent = [
 ]//tableContent
 
 
-export default function concertCoverage() {
+export default function About() {
 
   return (
     <>
@@ -105,28 +88,29 @@ export default function concertCoverage() {
       <VerticalNavbar fixed />
       <section className="header page-content relative items-center flex pt-8 ">
         <div className="mx-auto items-center flex flex-wrap h-fill ">
+        <h1 className="w-full text-6xl pb-20 font-bold text-center  bege">About</h1>
+
           <div className="w-full contents px-8 ">
             <div className="w-1/2 mx-auto px-6 pb-6">
-              <img className="w-1/2 mx-auto rounded-full" src={lowkeyContentArray[0].img} alt={lowkeyContentArray[0].alt} />
+              <img className="w-1/2 mx-auto rounded-full h-1/2 w-1/2" src={aboutArray[0].img} alt={aboutArray[0].alt} />
             </div>
             <div className="w-1/2 mx-auto px-6 pb-6">
               <h2 className="strong text-5xl pb-6">Afonso Carvalho</h2>
               <a href="mailto:afonsoncarvalho@icloud.com"><h4>afonsoncarvalho@icloud.com</h4></a>
-              <p>Freelancer Videographer and photographer</p>
-              <p>Also made the thumbnail, instagram ad, instagram teaser, Spotify canva and artwork.</p>
+              <br/>
+              <p>Freelancer Videographer and Photographer.</p>
+              <p>Based in Torres Vedras, Portugal. Creative worldwide.</p>
             </div>
           </div>
           <div className="w-full contents">
           <div className="w-full mx-auto px-6 pb-6 pt-12">
             <h2 className="text-3xl strong_g text-center">Selected Clients</h2>
             <div className="w-full flex flex-wrap">
-              {/* <div> */}
                 {logosAbout.map((e, key) =>
-                <div key={key} className="w-1/3">
+                <div key={key} className="w-1/3 self-center text-center">
                     <img  src={e.url} alt={e.alt}/>
                 </div>
                 )}
-              {/* </div> */}
             </div>
            
           </div>

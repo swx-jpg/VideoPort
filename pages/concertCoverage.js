@@ -10,14 +10,6 @@ import Footer from "components/Footers/Footer.js";
 import VerticalNavbar from "components/Navbars/VerticalNavbar.js";
 
 
-const masonryOptions = {
-  transitionDuration: 0
-};
-
-const imagesLoadedOptions = { background: '.my-bg-image-el' }
-
-
-
 const imagesArray = [
   {
     img: "./img/Site/concertCoverage/syro/galeria/galeria_syro_1.jpg", alt: "galeria syro 1"
@@ -77,7 +69,7 @@ const imagesArray = [
 ]
 
 
-export default function concertCoverage() {
+export default function ConcertCoverage() {
   useEffect(() => {
     let imagensAEsquerda =[];
     if (document.querySelectorAll(".imgs_gallery img")!= undefined) {
@@ -94,14 +86,12 @@ export default function concertCoverage() {
           document.querySelectorAll(".imgs_gallery img")[i].onmouseover = function (e) {
             //Math.floor(Math.random() * (max - min + 1) + min)
 
-           
-            // console.log(e.target)
-            // console.log(document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img").contains(e.target))
             // if (document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img").includes(e.target)){
             //   e.target.style.transform = 'rotate('+Math.floor(Math.random() * (1 + 1 + 1) - 1)+'deg) scale(1.5)';
             //   e.target.style.zIndex = '10';
             //   e.target.style.marginLeft = '-3em';
             // }
+
             e.target.style.transform = 'rotate('+Math.floor(Math.random() * (1 + 1 + 1) - 1)+'deg) scale(1.5)';
             e.target.style.zIndex = '10';
 
@@ -109,7 +99,6 @@ export default function concertCoverage() {
           document.querySelectorAll(".imgs_gallery img")[i].onmouseout  = function (e) {
             
             // if (document.querySelectorAll('.imgs_gallery div')[4].getElementsByTagName("img").includes(e.target)){
-             
             //   e.target.style.zIndex = '1';            
             //   e.target.style.marginLeft = '0em';
             //   e.target.style.marginLeft = '0em';
@@ -124,11 +113,6 @@ export default function concertCoverage() {
         
       }
     }
-
-    
-    
-    
-    
   }, []);
   return (
     <>
@@ -136,13 +120,15 @@ export default function concertCoverage() {
       <VerticalNavbar fixed />
       <section className="header page-content relative items-center flex pt-8 ">
         <div className=" mx-auto items-center flex flex-wrap h-fill ">
+        <h1 className="w-full text-6xl pb-20 font-bold text-center  bege">Concert Coverage</h1>
+
           <div className="w-full contents px-8 ">
             <div className="w-1/2 mx-auto px-6 pb-6">
-              <img className="w-1/2 mx-auto" src={imagesArray[0].img} />
+              <img className="w-1/2 mx-auto" src="/img/Site/concertCoverage/concertCover.jpg" />
             </div>
             <div className="w-1/2 mx-auto px-6 pb-6">
-              <h2 className="strong text-4xl text-center pb-6">Syro Shows</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor interdum urna, vel commodo turpis condimentum at. Sed mollis bibendum tortor, at molestie magna efficitur sagittis. Proin eu nulla urna. Cras commodo dui vitae nisi imperdiet euismod. Integer quis arcu suscipit, facilisis leo eu, euismod massa. Vestibulum at nibh pharetra, mattis diam non, hendrerit arcu. Curabitur molestie ut lectus semper aliquet. Nulla blandit, elit non sodales lobortis, mauris ligula egestas lectus, at lobortis nisi arcu id ipsum. Proin quis lorem sit amet dui sagittis feugiat. Praesent sodales diam sed iaculis vehicula. Nulla egestas tincidunt risus non malesuada. Aliquam placerat mollis ligula nec condimentum. Pellentesque eu massa tincidunt, facilisis erat ac, gravida orci. Cras interdum congue scelerisque. Praesent ipsum nibh, sagittis vel ex id, ornare tempor mi.</p>
+              <h2 className="strong text-4xl text-center pb-6 bege">Syro Shows</h2>
+              <p>Went on a 2 day in a row show with the rising portuguese pop artist Syro, to coverage the two shows as a photographer and social media content creator. </p>
             </div>
           </div>
           <div className="w-full contents  ">
