@@ -132,7 +132,7 @@ export default function ConcertCoverage() {
             </div>
           </div>
           <div className="w-full contents  ">
-            <div className="w-full bg-black px-16 pt-8 pb-32 -mb-24 imgs_gallery ">
+            <div className="w-full bg-black px-40 pt-8 pb-32 -mb-24 imgs_gallery ">
               <ResponsiveMasonry
                 columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
               >
