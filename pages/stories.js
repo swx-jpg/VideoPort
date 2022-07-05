@@ -34,7 +34,7 @@ export default function Stories() {
                   <p>{e.desc}</p>
                 </div>
               
-              <div className="w-full bg-black px-8 pt-8 pb-6  imgs_gallery  div_correction">
+              <div className="w-full bg-black px-8 pt-8 pb-6  imgs_gallery ">
                 <div className="w-1/2 mx-auto py-6">
                   <Player>
                     <source src={e.videoUrl} />
