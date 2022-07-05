@@ -151,7 +151,6 @@ export default function About() {
 
 
 
-                  {/* </tr> */}
                 </tbody>
               </table>
 

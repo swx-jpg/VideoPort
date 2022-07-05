@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
         <div className="container w-full mx-auto px-4 ">
           <div className="w-full flex flex-wrap mx-auto  self-center text-center lg:text-left ">
-            <div className="w-fullpx-4">
+            <div className="w-full px-4">
               <h4 className="text-3xl font-semibold">Let's keep in touch!</h4>
 
               <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
@@ -78,12 +78,7 @@ export default function Footer() {
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-blueGray-500 font-semibold py-1">
                 Copyright © {new Date().getFullYear()} Afonso Carvalho Portfólio by{" "}
-                <a
-                  href="https://www.creative-tim.com?ref=nnjs-footer"
-                  className="text-blueGray-500 hover:text-blueGray-800"
-                >
                   Swx
-                </a>
                 .
               </div>
             </div>

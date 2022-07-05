@@ -4238,3 +4238,6 @@ select {
 .border-solid-2px{
   border-bottom: 2px solid #000;
 }
+.bottom-20{
+  bottom: 5rem; /* 80px */
+}
