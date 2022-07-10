@@ -91,15 +91,17 @@ export default function About() {
         <h1 className="w-full text-6xl pb-20 font-bold text-center  bege">About</h1>
 
           <div className="w-full contents px-8 ">
-            <div className="w-1/2 mx-auto px-6 pb-6">
-              <img className="w-1/2 mx-auto rounded-full h-1/2 w-1/2" src={aboutArray[0].img} alt={aboutArray[0].alt} />
+            <div className="w-1/2 width_mobile mx-auto px-6 pb-6">
+              <img className="w-1/2 width_mobile mx-auto title_image_desk rounded-full h-1/2 w-1/2" src={aboutArray[0].img} alt={aboutArray[0].alt} />
             </div>
-            <div className="w-1/2 mx-auto px-6 pb-6">
-              <h2 className="strong text-5xl pb-6">Afonso Carvalho</h2>
-              <a href="mailto:afonsoncarvalho@icloud.com"><h4>afonsoncarvalho@icloud.com</h4></a>
+            <div className="w-1/2 width_mobile   mx-auto px-6 pb-6">
+              <h2 className="strong center_text_mobile text-5xl pb-6">Afonso Rufino</h2>
+              <img className="w-1/2 profile_mobile_img mx-auto title_image_mobile rounded-full h-1/2 w-1/2" src={aboutArray[0].img} alt={aboutArray[0].alt} />
+
+              <a href="mailto:afonsoncarvalho@icloud.com"><h4 className="center_text_mobile">afonsoncarvalho@icloud.com</h4></a>
               <br/>
-              <p>Freelancer Videographer and Photographer.</p>
-              <p>Based in Torres Vedras, Portugal. Creative worldwide.</p>
+              <p className="center_text_mobile">Freelancer Videographer and Photographer.</p>
+              <p className="center_text_mobile">Based in Torres Vedras, Portugal. Creative worldwide.</p>
             </div>
           </div>
           <div className="w-full contents">
@@ -115,7 +117,7 @@ export default function About() {
            
           </div>
             {/* bg-black */}
-            <div className="w-full bg-black px-40 md:px-20 sm:px-10 pt-12 pb-40 -mb-24 imgs_gallery py-6 ">
+            <div className="w-full bg-black table_mobile px-40 md:px-20 sm:px-10 pt-12 pb-40 -mb-24 imgs_gallery py-6 ">
 
               <table className="w-full text-white ">
                 <thead>

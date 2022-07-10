@@ -29,11 +29,12 @@ export default function Commercials() {
           {commercialsContent.map((e, key) =>
 
           <div key={key} className="w-full contents px-8 pb-32 -mb-24 div_commercials" >
-                <div className="w-1/2 mx-auto px-6 pb-6 mx-6  pt-6">
-                  <img className="w-2/3 mx-auto" src={e.urlImage} />
+                <div className="w-1/2 width_mobile mx-auto px-6 pb-6 mx-6  pt-6">
+                  <img className="w-2/3 title_image_desk mx-auto" src={e.urlImage} />
                 </div>
-                <div className="w-1/2 mx-auto px-6 pb-6">
-                  <h2 className="strong text-4xl text-center pb-6 bege"> {e.title}  </h2>
+                <div className="w-1/2 width_mobile mx-auto px-6 pb-6">
+                  <h2 className="strong text-4xl mobile_title_padding text-center pb-6 bege"> {e.title}  </h2>
+                  <img className="w-2/3 title_image_mobile mx-auto" src={e.urlImage} />
                   <p>{e.desc}</p>
                 </div>
               

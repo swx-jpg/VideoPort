@@ -8,11 +8,12 @@
 .vertical-nav {
     min-width: 20rem;
     width: 20rem;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     transition: all 0.4s;
+    z-index: 10;
 }
 
 .page-content {
@@ -23,9 +24,7 @@
 
 /* for toggle behavior */
 
-/* #sidebar.active {
-    margin-left: -17rem;
-} */
+
 
 #content.active {
     width: 100%;
@@ -35,16 +34,11 @@
 .bg_musicVideo {
 
     background-size: cover;
+    padding: 0 2em;
 }
 
 @media (max-width: 768px) {
-    /* #sidebar {
-        margin-left: -17rem;
-    } */
-    /* 
-    #sidebar.active {
-        margin-left: 0;
-    } */
+  
 
     #content {
         width: 100%;
@@ -180,39 +174,117 @@ p {
 .div_correction{
     min-height: 60vh;
 }
-@media screen and (max-width: 890px) {
-    .vertical-nav {
-        min-width: 100% !important;
-        width:  100% !important;
-        height: fit-content;
-        position: relative;
-        top: 0;
-        left: 0;
-        transition: all 0.4s;
-    }
-    ul.nav {
-        padding-top:0px !important;
-        display: inline-flex !important;
-    }
-
-    ul.nav .nav-item{
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        
-    }
-    .nav-item.active {
-        cursor: pointer;
-        opacity: 0.5 !Important;
-        transform: scale(1) !important;
-        margin-left: 0em !important;
-        transition: all 0.4s;
-    }
+@media screen and (max-width: 720px) {
+     
     .page-content {
         width: 100%  !important;
         margin-left: 0rem !important;
         transition: all 0.4s;
-    }
-    /* .vertical-nav hr{
+    } 
+
+}
+
+@media screen and (min-width: 1300px)  {
+    
+    .imgs_gallery div{
+        width: 80% !important;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+}
+@media screen and (min-width: 950px) and (max-width: 1300px) {
+    
+    .imgs_gallery div{
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+}
+
+div.sidebar-active{
+    left: 21em;
+}
+#idBtnSidebar{
+    transition: all 0.4s;
+}
+#idInfo{
+    transition: all 0.4s;
+    left: 4em;
+    background-color: #fff;
+    width: max-content;
+    top: 0.3em;
+    border-radius: 5%;
+    opacity: 80%;
+}
+
+@media screen and (min-width:768px){
+   
+    #idBtnSidebar, #idInfo{
         display: none;
+    }
+    
+
+}
+@media screen and ( max-width: 768px){
+
+    #sidebar.active{
+        left: 0rem;
+    }
+    #sidebar{
+        left:-20rem;
+    }
+    .page-content{
+        width: 100% !important;
+        margin-left: 0rem !important;
+    }
+    .bg_musicVideo {
+        padding: 0 4em !important;
+    }
+    
+    /* .page-content.active{
+        width: calc(100% - 20rem) !important;
+        margin-left:20em !important;
     } */
+
+}
+
+.title_image_mobile{
+    display: none;
+}
+
+@media screen and ( max-width:600px){
+    .width_mobile{
+        width: 100% !important;
+    }
+    .mobile_title_padding{
+        padding-bottom: 0em !important;
+    }
+    .title_image_mobile{
+        display: block !important;
+        width: 50% !important;
+        padding: 1em !important;
+    }
+    .title_image_desk{
+        display: none !important;
+    }
+    .center_text_mobile{
+        text-align: center !important;
+    }
+    .profile_mobile_img{
+        width: 30% !important;
+    }
+    .table_mobile{
+        padding-left: 2em !important;
+        padding-right: 2em !important;
+    }
+    .index_menu_pb{
+        padding-bottom: 1em !important;
+    }
+
+}
+
+.video_third_width{
+    width: 33.33% !important;
 }

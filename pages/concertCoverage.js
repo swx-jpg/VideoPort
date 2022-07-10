@@ -91,8 +91,12 @@ export default function ConcertCoverage() {
             //   e.target.style.zIndex = '10';
             //   e.target.style.marginLeft = '-3em';
             // }
-
-            e.target.style.transform = 'rotate('+Math.floor(Math.random() * (1 + 1 + 1) - 1)+'deg) scale(1.5)';
+            if ( window.innerWidth <= 750){
+              e.target.style.transform = 'rotate('+Math.floor(Math.random() * (1 + 1 + 1) - 1)+'deg) scale(1.1)';
+            }else{
+              e.target.style.transform = 'rotate('+Math.floor(Math.random() * (1 + 1 + 1) - 1)+'deg) scale(1.5)';
+            }
+            
             e.target.style.zIndex = '10';
 
           }
@@ -123,11 +127,13 @@ export default function ConcertCoverage() {
         <h1 className="w-full text-6xl pb-20 font-bold text-center  bege">Concert Coverage</h1>
 
           <div className="w-full contents px-8 ">
-            <div className="w-1/2 mx-auto px-6 pb-6">
-              <img className="w-1/2 mx-auto" src="/img/Site/concertCoverage/concertCover.jpg" />
+            <div className="w-1/2 width_mobile  mx-auto px-6 pb-6">
+              <img className="w-1/2 title_image_desk width_mobile mx-auto" src="/img/Site/concertCoverage/concertCover.jpg" alt="image of Afonso Rufino" />
             </div>
-            <div className="w-1/2 mx-auto px-6 pb-6">
-              <h2 className="strong text-4xl text-center pb-6 bege">Syro Shows</h2>
+            <div className="w-1/2 width_mobile mx-auto px-6 pb-6">
+              <h2 className="strong width_mobile mobile_title_padding text-4xl text-center pb-6 bege">Syro Shows</h2>
+              <img className="w-1/2 width_mobile title_image_mobile mx-auto" src="/img/Site/concertCoverage/concertCover.jpg" alt="image of Afonso Rufino"/>
+
               <p>Went on a 2 day in a row show with the rising portuguese pop artist Syro, to coverage the two shows as a photographer and social media content creator. </p>
             </div>
           </div>

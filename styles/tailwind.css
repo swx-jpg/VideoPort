@@ -3836,6 +3836,7 @@ select {
   .sm\:w-6\/12 {
     width: 50%;
   }
+  
 }
 
 @media (min-width: 768px) {

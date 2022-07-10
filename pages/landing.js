@@ -3,13 +3,13 @@ import Link from "next/link";
 
 // components
 
-import Navbar from "components/Navbars/AuthNavbar.js";
+import VerticalNavbar from "components/Navbars/VerticalNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 export default function Landing() {
   return (
     <>
-      <Navbar transparent />
+      <VerticalNavbar transparent />
       <main>
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div

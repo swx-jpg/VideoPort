@@ -20,15 +20,17 @@
     "postcss": "^8.4.14",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-icons": "^4.4.0",
     "react-responsive-masonry": "^2.1.4",
     "react-scripts": "^5.0.1",
+    "react-scroll-motion": "^0.3.0",
     "tailwindcss": "^2.2.19",
     "video-react": "^0.15.0"
   },
   "scripts": {
-    "start": "next start",
+    "dev": "node server.js",
     "build": "next build",
-    "dev": "next dev",
+    "start": "NODE_ENV=production node server.js",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
     "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
   },

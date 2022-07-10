@@ -6,6 +6,8 @@ import Link from "next/link";
 import VerticalNavbar from "components/Navbars/VerticalNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
+// import dynamic from "next/dynamic";
+// import { ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 
 
 const about = [
@@ -31,6 +33,13 @@ const workCat = [
 ];
 
 export default function Index() {
+// const Animator = dynamic(
+//   import("react-scroll-motion").then((it) => it.Animator),
+//   { ssr: false }
+// );
+
+
+
   return (
     <>
       <VerticalNavbar fixed />
@@ -40,36 +49,35 @@ export default function Index() {
 
           <div className="w-full contents px-4 h-fit">
 
-            <div className="w-1/2 text-center py-16 px-16 h-fit">
+            <div className="w-1/2 width_mobile mobile_title_padding text-center py-16 px-16 h-fit">
               <h2 className=" color_title">{about[0].title}</h2>
             </div>
-            <div className="w-1/2 text-left py-16 px-16 h-fit">
+            <div className="w-1/2 width_mobile text-left py-16 px-16 h-fit">
               <p className="">{about[0].desc}</p>
             </div>
+              <Link href="/musicVideos"> 
+                <div className="w-1/2 index_menu_pb width_mobile text-center bg_musicVideo pb-2 px-2">
+                    <img src={workCat[0].img} />
+                    <h2 className="">{workCat[0].title}</h2>
+                </div>
+              </Link>
             
-            <Link href="/musicVideos"> 
-              <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
-                  <img src={workCat[0].img} />
-                  <h2 className="">{workCat[0].title}</h2>
-              </div>
-            </Link>
-
             <Link href="/concertCoverage"> 
-              <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
+              <div className="w-1/2 index_menu_pb width_mobile text-center bg_musicVideo pb-2 px-2">
                 <img src={workCat[1].img} />
                 <h2 className="">{workCat[1].title}</h2>
               </div>
             </Link>
             
             <Link href="/commercials"> 
-              <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
+              <div className="w-1/2 index_menu_pb width_mobile text-center bg_musicVideo pb-2 px-2">
                   <img src={workCat[2].img} />
                   <h2 className="">{workCat[2].title}</h2>
               </div>
             </Link>
 
             <Link href="/stories"> 
-              <div className="w-1/2 text-center bg_musicVideo pb-2 px-2">
+              <div className="w-1/2 index_menu_pb width_mobile text-center bg_musicVideo pb-2 px-2">
                 <img src={workCat[3].img} />
                 <h2 className="">{workCat[3].title}</h2>
               </div>
