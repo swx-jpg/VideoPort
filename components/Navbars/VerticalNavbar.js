@@ -90,7 +90,7 @@ export default function Navbar(props) {
                 <div id="idInfo" className="absolute top-0 shadow-md p-2 ">Click to open the menu</div>
                 {/* </button> */}
               </div>
-              <Link href="/"><h4 className="m-0 bege">Afonso Rufino</h4></Link>
+              <Link href="/"><h1 className="m-0 bege text-6xl font-bold  bege">Afonso Rufino</h1></Link>
             </div>
           </div>
         </div>

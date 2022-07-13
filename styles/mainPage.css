@@ -186,8 +186,8 @@ p {
 
 @media screen and (min-width: 1300px)  {
     
-    .imgs_gallery div{
-        width: 80% !important;
+    .imgs_gallery div.w-full{
+        width: 60% !important;
         margin-left: auto;
         margin-right: auto;
     } 
@@ -195,8 +195,8 @@ p {
 }
 @media screen and (min-width: 950px) and (max-width: 1300px) {
     
-    .imgs_gallery div{
-        width: 90% !important;
+    .imgs_gallery div.w-full{
+        width: 70% !important;
         margin-left: auto;
         margin-right: auto;
     } 
@@ -205,6 +205,7 @@ p {
 
 div.sidebar-active{
     left: 21em;
+    z-index: 11;
 }
 #idBtnSidebar{
     transition: all 0.4s;
