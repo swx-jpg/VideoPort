@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState} from "react";
 import Link from "next/link";
+
 
 // import '~video-react/dist/video-react.css'; // import css
 
@@ -78,6 +79,72 @@ const tableContent = [
     ]//content 
   }
 ]//tableContent
+// const Cursor = () => {
+//   const [position, setPosition] = useState({ x: 0, y: 0 });
+//   const [hidden, setHidden] = useState(false);
+//   const [clicked, setClicked] = useState(false);
+//   const [linkHovered, setLinkHovered] = useState(false);
+
+
+//   useEffect(() => {
+//     addEventListeners();
+//     handleLinkHoverEvents();
+//     return () => removeEventListeners();
+//   }, []);
+
+//   const addEventListeners = () => {
+//     document.addEventListener("mousemove", onMouseMove);
+//     document.addEventListener("mouseenter", onMouseEnter);
+//     document.addEventListener("mouseleave", onMouseLeave);
+//     document.addEventListener("mousedown", onMouseDown);
+//     document.addEventListener("mouseup", onMouseUp);
+//   };
+
+//   const removeEventListeners = () => {
+//     document.removeEventListener("mousemove", onMouseMove);
+//     document.removeEventListener("mouseenter", onMouseEnter);
+//     document.removeEventListener("mouseleave", onMouseLeave);
+//     document.addEventListener("mousedown", onMouseDown);
+//     document.addEventListener("mouseup", onMouseUp);
+//   };
+//   const onMouseDown = () => {
+//     setClicked(true);
+//   };
+
+//   const onMouseUp = () => {
+//     setClicked(false);
+//   };
+//   const onMouseLeave = () => {
+//     setHidden(true);
+//   };
+
+//   const onMouseEnter = () => {
+//     setHidden(false);
+//   };
+
+//   const onMouseMove = (e) => {
+//     setPosition({ x: e.clientX, y: e.clientY });
+//   };
+//   const handleLinkHoverEvents = () => {
+//            document.querySelectorAll("a").forEach(el => {
+//                el.addEventListener("mouseover", () => setLinkHovered(true));
+//                el.addEventListener("mouseout", () => setLinkHovered(false));
+//            });
+//        };
+//   const cursorClasses = classNames(
+//     'cursor',
+//     {
+//       'cursor--clicked': clicked,
+//       'cursor--hidden': hidden,
+//       'cursor--link-hovered': linkHovered
+//     }
+//   );
+//   return <div className="cursor"
+//     style={{
+//       left: `${position.x}px`,
+//       top: `${position.y}px`
+//     }} />
+// }
 
 
 export default function About() {
@@ -161,8 +228,9 @@ export default function About() {
           </div>
 
         </div>
+        
       </section>
-
+      
       {/* <Footer /> */}
     </>
   );

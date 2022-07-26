@@ -10,6 +10,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "styles/tailwind.css";
 import "styles/mainPage.css";
 import "styles/videoPlayer.css";
+import CursorDiv from "pages/cursor.js";
 
 
 Router.events.on("routeChangeStart", (url) => {
@@ -63,11 +64,12 @@ export default class MyApp extends App {
   }
   render() {
     const { Component, pageProps } = this.props;
-
+    
     const Layout = Component.layout || (({ children }) => <>{children}</>);
 
     return (
       <React.Fragment>
+      
         <Head>
           <meta
             name="viewport"
@@ -76,8 +78,11 @@ export default class MyApp extends App {
           <title>Afonso Rufino</title>
         </Head>
         <Layout>
+        
           <Component {...pageProps} />
+          <CursorDiv/>
         </Layout>
+        
       </React.Fragment>
     );
   }
